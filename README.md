@@ -57,7 +57,8 @@ The app will be available at http://localhost:3000
 
 📸 Screenshots
 
-🚀 [Add screenshots of your app UI here]
+🚀 
+![Alt text](./public/dashboard.jpg)
 
 
 🤝 Contributing

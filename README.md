@@ -1,6 +1,6 @@
 # 🏦 SpendeX - AI-Powered Expense Tracker
 
-SpendeX is an AI-driven expense tracking and financial management web app that helps users **track, analyze, and optimize** their spending habits. Built using **Next.js, Clerk Authentication, MongoDB, and AI-powered financial insights**, SpendeX makes personal finance management **smart and effortless**.  
+SpendeX is an AI-driven expense tracking and financial management web app that helps users **track, analyze, and optimize** their spending habits. Built using **Next.js, Clerk Authentication, Neon DB, and AI-powered financial insights**, SpendeX makes personal finance management **smart and effortless**.  
 
 ---
 
@@ -12,7 +12,7 @@ SpendeX is an AI-driven expense tracking and financial management web app that h
 ✅ **AI Financial Advice:** Uses **Gemini AI** to offer personalized financial tips  
 ✅ **Interactive Dashboard:** View expenses in **graphs and charts**  
 ✅ **Mobile & Responsive:** Works smoothly on all devices  
-✅ **Secure & Private:** Your data is stored safely using **MongoDB**  
+✅ **Secure & Private:** Your data is stored safely using **NeonDB**  
 
 ---
 
@@ -41,13 +41,24 @@ npm install
 
 Create a .env.local file and add the following:
 
-NEXT_PUBLIC_CLERK_FRONTEND_API=your_clerk_api_key
 
-NEXT_PUBLIC_OPENAI_API_KEY=your_openai_key
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_key
 
-MONGODB_URI=your_mongodb_connection_string
+CLERK_SECRET_KEY=..........
 
-NEXT_PUBLIC_HUGGINGFACE_API_KEY=your_huggingface_key
+NEXT_PUBLIC_CLEARK_SIGN_IN_URL='/app/auth/sign-in'
+
+NEXT_PUBLIC_CLEARK_SIGN_UP_URL='/app/auth/sign-up'
+
+NEXT_PUBLIC_CLEARK_AFTER_SIGN_IN_URL='/dashboard'
+
+NEXT_PUBLIC_CLEARK_AFTER_SIGN_UP_URL='/dashboard'
+
+NEXT_PUBLIC_DATABASE_URL=your_database_url_key
+
+NEXT_PUBLIC_AI_API_KEY=your_AIapi_key
+
+  
 
 🔹 4. Start the Development Server
 
@@ -72,6 +83,8 @@ This project is open-source and available under the MIT License.
 📩 Contact
 
 For queries, reach out to:
-📧 Email: sathishbhupa522@gmail.com   
+
+📧 Email: sathishbhupa522@gmail.com  
+
 🌐 GitHub: Sathishbhupa
 

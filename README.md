@@ -41,20 +41,22 @@ npm install
 
 Create a .env.local file and add the following:
 
-env
-Copy
-Edit
 NEXT_PUBLIC_CLERK_FRONTEND_API=your_clerk_api_key
+
 NEXT_PUBLIC_OPENAI_API_KEY=your_openai_key
+
 MONGODB_URI=your_mongodb_connection_string
+
 NEXT_PUBLIC_HUGGINGFACE_API_KEY=your_huggingface_key
 
 🔹 4. Start the Development Server
 
 npm run dev
+
 The app will be available at http://localhost:3000
 
 📸 Screenshots
+
 🚀 [Add screenshots of your app UI here]
 
 

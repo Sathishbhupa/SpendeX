@@ -13,7 +13,7 @@ const getFinancialAdvice = async (totalBudget, totalIncome, totalSpend) => {
         - Total Expenses: ₹${totalSpend}
         - Total Income: ₹${totalIncome}
 
-        The user is struggling to save money and would like advice on how to reduce expenses and allocate funds more effectively . 
+        You are a budgeting app.The user is struggling to save money and would like advice on how to reduce expenses and allocate funds more effectively . 
         Give about 2-5 lines of financial advice can you provide to help the user better manage their expenses`;
 
    

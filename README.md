@@ -35,9 +35,6 @@ cd SpendeX
 
 🔹 2. Install Dependencies
 
-sh
-Copy
-Edit
 npm install
 
 🔹 3. Setup Environment Variables
@@ -54,9 +51,6 @@ NEXT_PUBLIC_HUGGINGFACE_API_KEY=your_huggingface_key
 
 🔹 4. Start the Development Server
 
-sh
-Copy
-Edit
 npm run dev
 The app will be available at http://localhost:3000
 
@@ -75,6 +69,6 @@ This project is open-source and available under the MIT License.
 📩 Contact
 
 For queries, reach out to:
-📧 Email: sathishbhupa522@gmail.com
+📧 Email: sathishbhupa522@gmail.com   
 🌐 GitHub: Sathishbhupa
 

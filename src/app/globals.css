@@ -275,6 +275,18 @@ body {
   }
 }
 
+.custom-gradient {
+  background-image: linear-gradient(to bottom right,
+    #3087f8, 
+    #60a5fa,  
+    #71b1fa,  
+    #4798f5,  
+    #77b0f7, 
+    #4595f0,  
+    #74acf0   
+  );
+}
+
 .background-animate {
   background-size: 400%;
 

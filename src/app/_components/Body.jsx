@@ -10,13 +10,7 @@ import Particles from "react-tsparticles";
 function Body() {
   const { isSignedIn } = useUser();
   return (
-    <section
-      style={{
-        backgroundImage: "linear-gradient(to bottom right, #4567b7, #8bc34a)",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
+     <section className="custom-gradient background-animate">
       <div style={{ position: "relative", overflow: "hidden" }}>
         <Particles
           id="tsparticles"

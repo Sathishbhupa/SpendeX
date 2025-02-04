@@ -14,9 +14,13 @@ function DashboardHeader() {
 
   return (
     <div className={`p-5 flex justify-between ${isDarkMode ? 'dark' : ''}`}>
-      <div>
-        <button className=" border-2 rounded-3xl ml-4 mr-3 p-2" onClick={toggleDarkMode}>
-          {isDarkMode ? <Sun className="w-4" /> : <Moon className="w-4" />}
+      <div className="flex relative">
+      <button className="shadow-lg mr-3 rounded-full p-2 flex items-center justify-center transition-all duration-300" onClick={toggleDarkMode}>
+          <div className={`w-10 h-5 flex items-center rounded-full ${isDarkMode ? 'bg-blue-400' : 'bg-gray-300'} transition-all duration-300`}>
+            <div className={`w-6 h-6 bg-white rounded-full items-center shadow-md transform ${isDarkMode ? 'translate-x-5' : 'translate-x-0'} transition-transform duration-300`}>
+              {isDarkMode ? <Sun className="w-4 ml-1" /> : <Moon className="w-4 ml-1" />}
+            </div>
+          </div>
         </button>
         <UserButton
           afterSignOut={() => {

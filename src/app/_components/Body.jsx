@@ -12,37 +12,6 @@ function Body() {
   return (
      <section className="custom-gradient background-animate">
       <div style={{ position: "relative", overflow: "hidden" }}>
-        <Particles
-          id="tsparticles"
-          options={{
-            fullScreen: { enable: false },
-            particles: {
-              number: { value: 50 },
-              color: { value: "#ffffff" },
-              shape: { type: "circle" },
-              opacity: { value: 0.5 },
-              size: { value: 4 },
-              move: {
-                enable: true,
-                speed: 2,
-                direction: "none",
-                random: true,
-                straight: false,
-                outMode: "out",
-              },
-            },
-            background: {
-              color: "transparent",
-            },
-          }}
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-          }}
-        />
         <div
           style={{
             position: "relative",
@@ -60,7 +29,7 @@ function Body() {
       </div>
       <CardContainer className="inter-var">
         <CardBody
-          className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border"
+          className="bg-gray-200 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border"
         >
           <CardItem
             translateZ="50"

@@ -67,13 +67,7 @@ function SideNav() {
             </h2>
           </Link>
         ))}
-      <div
-        className="sticky mt-72 p-5 flex gap-2
-            items-center"
-      >
-        <UserButton classname ="bg-blue-500 " />
-        <h2 className='cursor-default'>Profile</h2>
-      </div>
+    
       </div>
       
     </div>

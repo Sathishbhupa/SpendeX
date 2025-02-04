@@ -5,7 +5,6 @@ import React from "react";
 import { CardBody, CardContainer, CardItem } from "src/components/ui/3d-card.jsx";
 import Link from "next/link";
 import { useUser } from "@clerk/nextjs";
-import Particles from "react-tsparticles";
 
 function Body() {
   const { isSignedIn } = useUser();

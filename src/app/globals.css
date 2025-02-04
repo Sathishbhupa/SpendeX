@@ -186,6 +186,10 @@ body {
   background-color: rgb(123, 46, 247);
 }
 
+.dark .bg-neutral-950{
+  background-color: #ffffff;
+}
+
 .dark .latest-expenses-table {
   background-color: #333;
   color: #ffffff;

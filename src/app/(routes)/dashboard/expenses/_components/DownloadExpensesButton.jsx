@@ -61,7 +61,7 @@ const DownloadExpensesButton = ({ expensesList }) => {
       )}
 
       <button onClick={downloadCurrentMonthExpenses} className="button mt-10 flex gap-2 items-center">
-      <Download className="w-4  text-blue-800" />
+      <Download className="w-4 h-6 text-blue-800" />
           <span className="button_lg">
               <span className="button_sl"></span>
               <span className="button_text">Download Current Month Expenses</span>

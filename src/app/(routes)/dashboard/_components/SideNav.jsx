@@ -36,6 +36,12 @@ function SideNav() {
       icon: ReceiptText,
       path: "/dashboard/expenses",
     },
+    {
+      id: 5,
+      name: "Monthly Report",
+      icon: ReceiptText,
+      path: "/dashboard/reports",
+    },
   ];
   const path = usePathname();
 
@@ -67,7 +73,7 @@ function SideNav() {
             </h2>
           </Link>
         ))}
-    
+
       </div>
       
     </div>

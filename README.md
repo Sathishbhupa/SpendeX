@@ -9,7 +9,7 @@ SpendeX is an AI-driven expense tracking and financial management web app that h
 ✅ **User Authentication:** Secure sign-in & sign-up using **Clerk**  
 ✅ **Track Expenses:** Add, edit, and delete expenses effortlessly  
 ✅ **Budget Management:** Set budgets and track spending in real-time  
-✅ **Able to download Monthlyreprot of current month in Excel sheet         
+✅ Able to download Monthlyreprot of current month in Excel sheet         
 ✅ **AI Financial Advice:** Uses **Gemini AI** to offer personalized financial tips  
 ✅ **Interactive Dashboard:** View expenses in **graphs and charts**  
 ✅ **Mobile & Responsive:** Works smoothly on all devices  

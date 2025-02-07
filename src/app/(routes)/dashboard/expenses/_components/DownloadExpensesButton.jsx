@@ -1,38 +1,44 @@
-'use client'
-
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { toast } from "sonner";
 
 const DownloadExpensesButton = ({ expensesList }) => {
+  const [daysLeft, setDaysLeft] = useState(null);
+
+  useEffect(() => {
+    // Calculate days left in the current month
+    const today = new Date();
+    const lastDayOfMonth = new Date(today.getFullYear(), today.getMonth() + 1, 0);
+    const daysRemaining = lastDayOfMonth.getDate() - today.getDate();
+
+    setDaysLeft(daysRemaining);
+  }, []);
+
   const downloadCurrentMonthExpenses = () => {
+    if (!expensesList || !Array.isArray(expensesList)) {
+      toast.error("No expenses data available to download.");
+      return;
+    }
+
     const currentMonth = new Date().getMonth() + 1;
     const currentYear = new Date().getFullYear();
 
-    console.log("Current Month:", currentMonth);
-    console.log("Current Year:", currentYear);
-
-    // Filter expenses for the current month
     const currentMonthExpenses = expensesList.filter((expense) => {
-      const [day, month, year] = expense.createdAt.split("/").map(Number); 
-      console.log(`Parsed Date - Day: ${day}, Month: ${month}, Year: ${year}`);
+      if (!expense.createdAt) return false;
 
+      const [day, month, year] = expense.createdAt.split("/").map(Number);
       return month === currentMonth && year === currentYear;
     });
-
-    console.log("Filtered Expenses:", currentMonthExpenses);
 
     if (currentMonthExpenses.length === 0) {
       toast("No expenses found for the current month.");
       return;
     }
 
-    // Convert to CSV format
     let csvContent = "Name,Amount,Date\n";
     currentMonthExpenses.forEach((expense) => {
       csvContent += `${expense.name},${expense.amount},${expense.createdAt}\n`;
     });
 
-    // Create a Blob and trigger a download
     const blob = new Blob([csvContent], { type: "text/csv" });
     const link = document.createElement("a");
     link.href = URL.createObjectURL(blob);
@@ -43,12 +49,23 @@ const DownloadExpensesButton = ({ expensesList }) => {
   };
 
   return (
-    <button
-      onClick={downloadCurrentMonthExpenses}
-      className="bg-blue-500 text-white px-4 py-2 rounded mt-3"
-    >
-      Download Current Month Expenses
-    </button>
+    <div className="flex flex-col items-center mt-5">
+      {/* Reminder Message */}
+      {daysLeft !== null && (
+        <p className="text-red-600 font-medium mb-3">
+          {daysLeft > 0
+            ? `Reminder: Download your report before the month ends! (${daysLeft} day${daysLeft > 1 ? "s" : ""} left)`
+            : "It's the last day of the month! Don't forget to download your report!"}
+        </p>
+      )}
+
+      <button onClick={downloadCurrentMonthExpenses} class="button">
+          <span class="button_lg">
+              <span class="button_sl"></span>
+              <span class="button_text">Download Current Month Expenses</span>
+          </span>
+      </button>
+    </div>
   );
 };
 

@@ -22,7 +22,8 @@ function IncomeItem({ budget, onDelete }) {
   return (
     <div
       className="p-5 border rounded-2xl
-      hover:shadow-md cursor-pointer min-h-[170px]"
+      hover:shadow-md cursor-pointer min-h-[170px]
+      flex flex-col w-[430px] max-w-full mx-auto"
     >
       <div className="flex flex-wrap gap-4 items-center justify-between">
         {/* Left Section: Icon and Details */}

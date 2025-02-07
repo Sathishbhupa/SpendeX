@@ -10,7 +10,7 @@ function BudgetItem({ budget }) {
   return (
     <Link href={`/dashboard/expenses/${budget?.id}`}>
       <div
-        className="p-5 border rounded-2xl hover:shadow-md cursor-pointer min-h-[170px] flex flex-col justify-between"
+        className="p-5 border rounded-2xl hover:shadow-md cursor-pointer min-h-[170px] flex flex-col justify-between w-full md:w-1/2 lg:w-1/3"
       >
         {/* Top Section: Title and Amount */}
         <div className="flex flex-wrap gap-4 items-center justify-between">

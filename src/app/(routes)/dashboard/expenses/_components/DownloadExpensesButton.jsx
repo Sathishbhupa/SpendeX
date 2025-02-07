@@ -49,7 +49,7 @@ const DownloadExpensesButton = ({ expensesList }) => {
   };
 
   return (
-    <div className="flex flex-col items-center mt-5">
+    <div className="flex flex-col items-center mt-10">
       {/* Reminder Message */}
       {daysLeft !== null && (
         <p className="text-red-600 font-medium mb-3">
@@ -59,10 +59,10 @@ const DownloadExpensesButton = ({ expensesList }) => {
         </p>
       )}
 
-      <button onClick={downloadCurrentMonthExpenses} class="button">
-          <span class="button_lg">
-              <span class="button_sl"></span>
-              <span class="button_text">Download Current Month Expenses</span>
+      <button onClick={downloadCurrentMonthExpenses} className="button mt-10">
+          <span className="button_lg">
+              <span className="button_sl"></span>
+              <span className="button_text">Download Current Month Expenses</span>
           </span>
       </button>
     </div>

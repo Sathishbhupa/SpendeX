@@ -386,7 +386,7 @@ body {
 .button::before,
 .button::after {
   content: '';
-  display: block;
+  display: flex;
   position: absolute;
   right: 0;
   left: 0;
@@ -426,7 +426,7 @@ body {
 
 .button_lg {
   position: relative;
-  display: block;
+  display: flex;
   padding: 10px 20px;
   color: #fff;
   background-color: #0f1923;
@@ -436,7 +436,7 @@ body {
 
 .button_lg::before {
   content: '';
-  display: block;
+  display: flex;
   position: absolute;
   top: 0;
   left: 0;
@@ -447,7 +447,7 @@ body {
 
 .button_lg::after {
   content: '';
-  display: block;
+  display: flex;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -458,7 +458,7 @@ body {
 }
 
 .button_sl {
-  display: block;
+  display: flex;
   position: absolute;
   top: 0;
   bottom: -1px;

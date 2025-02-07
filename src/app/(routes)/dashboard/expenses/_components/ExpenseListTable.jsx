@@ -19,7 +19,8 @@ function ExpenseListTable({ expensesList, refreshData }) {
 
   return (
     <div className="mt-3 w-full overflow-x-auto">
-      <h2 className="font-bold text-lg">Latest Expenses</h2>
+      <h2 className="font-bold text-lg mb-8 ml-6
+      ">Latest Expenses</h2>
 
       {/* Table Header */}
       <div className="grid grid-cols-[repeat(4,minmax(0,1fr))] bg-slate-200 p-2 mt-3 rounded-t-xl">

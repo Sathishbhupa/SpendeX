@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { toast } from "sonner";
+import { Download } from "lucide-react";
 
 const DownloadExpensesButton = ({ expensesList }) => {
   const [daysLeft, setDaysLeft] = useState(null);
@@ -59,7 +60,8 @@ const DownloadExpensesButton = ({ expensesList }) => {
         </p>
       )}
 
-      <button onClick={downloadCurrentMonthExpenses} className="button mt-10">
+      <button onClick={downloadCurrentMonthExpenses} className="button mt-10 flex gap-2 items-center">
+      <Download className="w-4  " />
           <span className="button_lg">
               <span className="button_sl"></span>
               <span className="button_text">Download Current Month Expenses</span>

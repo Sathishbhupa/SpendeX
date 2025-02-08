@@ -12,7 +12,7 @@ function BudgetItem({ budget }) {
       <div
         className="p-5 border rounded-2xl hover:shadow-md cursor-pointer min-h-[170px] 
                    flex flex-col justify-between 
-                   w-[250px] max-w-full mx-auto "
+                   w-[300px] max-w-full mx-auto "
       >
         {/* Top Section: Title and Amount */}
         <div className="flex flex-wrap gap-4 items-center justify-between">

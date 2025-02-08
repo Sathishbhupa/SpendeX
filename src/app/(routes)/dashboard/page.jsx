@@ -108,11 +108,11 @@ function Dashboard() {
           <h2 className="font-bold text-lg">Latest Budgets</h2>
           {budgetList?.length > 0
             ? budgetList.map((budget) => (
-                <BudgetItem budget={budget} key={budget.id} />
+                <BudgetItem className=" w-[250px]" budget={budget} key={budget.id} />
               ))
             : [1, 2, 3, 4].map((item) => (
                 <div
-                  className="h-[180xp] w-[250px] bg-slate-200 rounded-lg animate-pulse"
+                  className="h-[180xp] w-full bg-slate-200 rounded-lg animate-pulse"
                   key={item}
                 ></div>
               ))}

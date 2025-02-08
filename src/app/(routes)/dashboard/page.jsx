@@ -104,7 +104,7 @@ function Dashboard() {
           />
         </div>
 
-        <div className="grid gap-5">
+        <div className="grid gap-5 w-[300px]">
           <h2 className="font-bold text-lg">Latest Budgets</h2>
           {budgetList?.length > 0
             ? budgetList.map((budget) => (

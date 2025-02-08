@@ -104,7 +104,7 @@ function Dashboard() {
           />
         </div>
 
-        <div className="grid gap-5 w-[250px]">
+        <div className="grid gap-5">
           <h2 className="font-bold text-lg">Latest Budgets</h2>
           {budgetList?.length > 0
             ? budgetList.map((budget) => (
@@ -112,7 +112,7 @@ function Dashboard() {
               ))
             : [1, 2, 3, 4].map((item) => (
                 <div
-                  className="h-[180xp] w-full bg-slate-200 rounded-lg animate-pulse"
+                  className="h-[180xp] w-[250px] bg-slate-200 rounded-lg animate-pulse"
                   key={item}
                 ></div>
               ))}

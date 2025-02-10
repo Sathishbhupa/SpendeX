@@ -108,7 +108,7 @@ function Dashboard() {
           <h2 className="font-bold text-lg">Latest Budgets</h2>
           {budgetList?.length > 0
             ? budgetList.map((budget) => (
-                <BudgetItem className=" w-[250px]" budget={budget} key={budget.id} />
+                <BudgetItem budget={budget} key={budget.id} />
               ))
             : [1, 2, 3, 4].map((item) => (
                 <div

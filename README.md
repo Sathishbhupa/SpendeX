@@ -1,6 +1,6 @@
 # 🏦 SpendeX - AI-Powered Expense Tracker
 
-SpendeX is an AI-driven expense tracking and financial management web app that helps users **track, analyze, and optimize** their spending habits. Built using **Next.js, Clerk Authentication, Neon DB, and AI-powered financial insights**, SpendeX makes personal finance management **smart and effortless**.  
+SpendeX is an AI-driven expense tracking and financial management web app that helps users **track, analyze, and optimize** their spending habits. Built using **Next.js, Clerk Authentication, Neon DB, and Tailwind CSS**.
 
 ---
 
@@ -14,6 +14,9 @@ SpendeX is an AI-driven expense tracking and financial management web app that h
 ✅ **Interactive Dashboard:** View expenses in **graphs and charts**  
 ✅ **Mobile & Responsive:** Works smoothly on all devices  
 ✅ **Secure & Private:** Your data is stored safely using **NeonDB**  
+✅ **Expense Categorization:** Automatically categorizes expenses into predefined categories  
+✅ **Recurring Expenses:** Track and manage recurring expenses  
+✅ **Expense Sharing:** Download and Share expenses with others
 
 ---
 
@@ -31,6 +34,7 @@ SpendeX is an AI-driven expense tracking and financial management web app that h
 
 🔹 **1. Clone the Repository**  
 
+sh
 git clone https://github.com/Sathishbhupa/SpendeX.git
 cd SpendeX
 

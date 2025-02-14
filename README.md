@@ -38,11 +38,11 @@ sh
 git clone https://github.com/Sathishbhupa/SpendeX.git
 cd SpendeX
 
-🔹 2. Install Dependencies
+🔹 **2. Install Dependencies**
 
 npm install
 
-🔹 3. Setup Environment Variables
+🔹 **3. Setup Environment Variables**
 
 Create a .env.local file and add the following:
 
@@ -65,27 +65,27 @@ NEXT_PUBLIC_AI_API_KEY=your_AIapi_key
 
   
 
-🔹 4. Start the Development Server
+🔹 **4. Start the Development Server**
 
 npm run dev
 
 The app will be available at http://localhost:3000
 
-📸 Screenshots
+📸 **Screenshots**
 
 🚀 
 ![Alt text](./public/dashboard.jpg)
 
 
-🤝 Contributing
+🤝 **Contributing**
 
 We welcome contributions! Feel free to fork the repo, create a branch, and submit a PR.
 
-📜 License
+📜 **License**
 
 This project is open-source and available under the MIT License.
 
-📩 Contact
+📩 **Contact**
 
 For queries, reach out to:
 

@@ -54,9 +54,7 @@ const DownloadExpensesButton = ({ expensesList }) => {
       {/* Reminder Message */}
       {daysLeft !== null && (
         <p className="text-red-600 font-medium mb-3">
-          {daysLeft > 0
-            ? `Reminder: Download your report before the month ends! (${daysLeft} day${daysLeft > 1 ? "s" : ""} left)`
-            : "It's the last day of the month! Don't forget to download your report!"}
+          Note: You can only download the expense list for the current month. This restriction ensures that only the most up-to-date financial information is accessible for download. Previous months' data can be accessed for viewing, but not for download.
         </p>
       )}
 
